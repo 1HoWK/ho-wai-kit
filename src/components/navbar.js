@@ -11,9 +11,9 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['About', 'Skills', 'Project', 'Contact'];
+const pages = ['about', 'skills', 'project', 'contact'];
 
-function ResponsiveAppBar() {
+export default function NavigationBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -25,7 +25,7 @@ function ResponsiveAppBar() {
     };
     //   12022A,100027 150134, 
     return (
-        <AppBar position="static" sx={{ bgcolor: "#100027" }}>
+        <AppBar color="transparent" position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     {/* Normal */}
@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: '#e4e4eb',
+                            color: '#bbbace',
                             textDecoration: 'none',
                         }}
                     >
@@ -111,13 +111,15 @@ function ResponsiveAppBar() {
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: '#e4e4eb', display: 'block', }}
+                                href={"#" + page }
+
+                                sx={{ my: 2, color: '#bbbace', display: 'block', }}
                             >
                                 {page}
                             </Button>
                         ))}
                         <Button
-                            sx={{ my: 2, color: '#e4e4eb', display: 'block', border: 2, borderRadius: 1 }}
+                            sx={{ my: 2, color: '#bbbace', display: 'block' }}
                         >
                             Resume
                         </Button>
@@ -128,5 +130,4 @@ function ResponsiveAppBar() {
             </Container>
         </AppBar>
     );
-}
-export default ResponsiveAppBar;
+};
