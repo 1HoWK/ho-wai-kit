@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['about', 'skills', 'project', 'contact'];
+const pages = ['about', 'project', 'contact'];
 
 export default function NavigationBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,7 +40,7 @@ export default function NavigationBar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: '#bbbace',
+                            color: '#bcc6d6',
                             textDecoration: 'none',
                         }}
                     >
@@ -96,7 +96,7 @@ export default function NavigationBar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: '#4b4777',
+                            color: '#bcc6d6',
                             textDecoration: 'none',
                         }}
                     >
@@ -111,15 +111,14 @@ export default function NavigationBar() {
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                href={"#" + page }
-
-                                sx={{ my: 2, color: '#bbbace', display: 'block', }}
+                                href={"#" + page}
+                                sx={{ my: 2, color: '#bcc6d6', display: 'block' }}
                             >
                                 {page}
                             </Button>
                         ))}
                         <Button
-                            sx={{ my: 2, color: '#bbbace', display: 'block' }}
+                            sx={{ my: 2, color: '#bcc6d6', display: 'block' }}
                         >
                             Resume
                         </Button>
