@@ -1,5 +1,4 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
@@ -8,14 +7,13 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import ProfilePicture from '../assets/HoWaiKit.jpg';
 
-
 export default function About() {
 
     //   12022A,100027 150134, 
     return (
 
         <Container id="about">
-            <Grid container spacing={2} sx={{ textAlign: "left", color: '#bcc6d6', my: 22, mx: 2 }}>
+            <Grid container spacing={2} sx={{ textAlign: "left", color: '#bcc6d6', m: 2 }}>
                 <Grid item xs={8}>
                     <Typography variant="h2" sx={{ color: '#d2a85f' }}>
                         Hey, I'm Ho Wai Kit

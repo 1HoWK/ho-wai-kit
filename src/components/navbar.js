@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { styled } from '@mui/material/styles';
 
 
 const pages = ['about', 'project', 'contact'];
@@ -40,7 +41,7 @@ export default function NavigationBar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: '#bcc6d6',
+                            color: '#d2a85f',
                             textDecoration: 'none',
                         }}
                     >
@@ -96,7 +97,7 @@ export default function NavigationBar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: '#bcc6d6',
+                            color: '#d2a85f',
                             textDecoration: 'none',
                         }}
                     >
@@ -108,20 +109,20 @@ export default function NavigationBar() {
                             flexGrow: 1, display: { xs: 'none', md: 'flex' }
                         }}>
                         {pages.map((page) => (
-                            <Button
+                            <Buttons
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 href={"#" + page}
-                                sx={{ my: 2, color: '#bcc6d6', display: 'block' }}
+                                sx={{ m: 2, display: 'block' , fontWeight: 'bold'}}
                             >
                                 {page}
-                            </Button>
+                            </Buttons>
                         ))}
-                        <Button
-                            sx={{ my: 2, color: '#bcc6d6', display: 'block' }}
+                        <ResumeButton
+                            sx={{ m: 2, color: '#bcc6d6', display: 'block', fontWeight: 'bold' }}
                         >
                             Resume
-                        </Button>
+                        </ResumeButton>
                     </Box>
 
 
@@ -130,3 +131,20 @@ export default function NavigationBar() {
         </AppBar>
     );
 };
+
+const ResumeButton = styled(Button)(({ theme }) => ({
+    border: '2px solid',
+    color: '#bcc6d6',
+    borderColor: '#bcc6d6',
+    '&:hover': {
+        color: '#d2a85f',
+        borderColor: '#d2a85f',
+    },
+}));
+
+const Buttons = styled(Button)(({ theme }) => ({
+    color: '#bcc6d6',
+    '&:hover': {
+        color: '#d2a85f',
+    },
+}));
