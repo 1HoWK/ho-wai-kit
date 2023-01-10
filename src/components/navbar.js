@@ -120,6 +120,7 @@ export default function NavigationBar() {
                         ))}
                         <ResumeButton
                             sx={{ m: 2, color: '#bcc6d6', display: 'block', fontWeight: 'bold' }}
+                            
                         >
                             Resume
                         </ResumeButton>
