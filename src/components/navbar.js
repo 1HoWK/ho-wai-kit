@@ -24,10 +24,10 @@ export default function NavigationBar() {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
-    //   12022A,100027 150134, 
+
     return (
-        <AppBar color="transparent" position="static">
-            <Container maxWidth="xl">
+        <AppBar color="transparent" position="static"  sx={{ color: '#d2a85f', border: 1 }}>
+            <Container maxWidth="xl" sx={{ color: '#d2a85f', border: 1 }}>
                 <Toolbar disableGutters>
                     {/* Normal */}
                     <Typography
@@ -113,14 +113,14 @@ export default function NavigationBar() {
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 href={"#" + page}
-                                sx={{ m: 2, display: 'block' , fontWeight: 'bold'}}
+                                sx={{ m: 2, display: 'block', fontWeight: 'bold' }}
                             >
                                 {page}
                             </Buttons>
                         ))}
                         <ResumeButton
                             sx={{ m: 2, color: '#bcc6d6', display: 'block', fontWeight: 'bold' }}
-                            
+
                         >
                             Resume
                         </ResumeButton>
