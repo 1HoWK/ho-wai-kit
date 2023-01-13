@@ -5,9 +5,9 @@ import Container from '@mui/material/Container';
 export default function Contact() {
 
     return (
-        <Container id="contact" sx={{ color: '#d2a85f', border: 1 }}>
+        <Container id="contact" sx={{ color: '#d2a85f', border: 1, p: 3 }}>
 
-            <Typography variant="h2" sx={{ color: '#d2a85f', border: 1, textAlign: 'left' }}>
+            <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'left' }}>
                 Let's Connect
             </Typography>
         </Container>
