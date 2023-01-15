@@ -14,6 +14,9 @@ export default function Contact() {
             name: <EmailIcon fontSize='medium' sx={{
                 color: '#bcc6d6',
                 textDecoration: 'none',
+                border: 2,
+                borderRadius: 20,
+                padding: 1,
                 "&:hover": {
                     color: '#d2a85f',
                 }
@@ -23,7 +26,9 @@ export default function Contact() {
             name: <LinkedInIcon fontSize='medium' sx={{
                 color: '#bcc6d6',
                 textDecoration: 'none',
-                fontWeight: 'bold',
+                border: 2,
+                borderRadius: 20,
+                padding: 1,
                 "&:hover": {
                     color: '#d2a85f',
                 }
@@ -33,7 +38,9 @@ export default function Contact() {
             name: <GitHubIcon fontSize='medium' sx={{
                 color: '#bcc6d6',
                 textDecoration: 'none',
-                fontWeight: 'bold',
+                border: 2,
+                borderRadius: 20,
+                padding: 1,
                 "&:hover": {
                     color: '#d2a85f',
                 }
