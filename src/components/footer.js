@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 export default function Footer() {
 
     return (
-        <Container sx={{ color: '#d2a85f', border: 1 }} >
+        <Container sx={{ p: 1, textAlign: 'center' }} >
 
             <Link href="https://github.com/1HoWK/ho-wai-kit" target="_blank" variant="caption"
                 sx={{
