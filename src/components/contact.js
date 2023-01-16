@@ -49,7 +49,7 @@ export default function Contact() {
     ]
 
     return (
-        <Container id="contact" sx={{ color: '#d2a85f', p: 20 }}>
+        <Container id="contact" sx={{ color: '#d2a85f', p: 20}}>
 
             <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center' }}>
                 Let's Connect

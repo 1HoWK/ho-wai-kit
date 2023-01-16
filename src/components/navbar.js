@@ -10,9 +10,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { styled } from '@mui/material/styles';
+// import Resume from '../assets/resume.pdf';
 
 
-const pages = ['about','skills', 'project', 'contact'];
+const pages = ['about', 'skills', 'project', 'contact'];
 
 export default function NavigationBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,7 +27,7 @@ export default function NavigationBar() {
     };
 
     return (
-        <AppBar color="transparent" position="static"  sx={{ border: 1 }}>
+        <AppBar color="transparent" position="static" sx={{ border: 1 }}>
             <Container maxWidth="xl" sx={{ color: '#d2a85f' }}>
                 <Toolbar disableGutters>
                     {/* Normal */}
@@ -120,7 +121,8 @@ export default function NavigationBar() {
                         ))}
                         <ResumeButton
                             sx={{ m: 2, color: '#bcc6d6', display: 'block', fontWeight: 'bold' }}
-
+                        // href={Resume}
+                        // target="_blank"
                         >
                             Resume
                         </ResumeButton>

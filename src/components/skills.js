@@ -19,9 +19,9 @@ export default function Skills() {
     // ]
 
     return (
-        <Container id="skills" sx={{ color: '#d2a85f', border: 1, borderColor: '#d2a85f', p: 20 }}>
+        <Container id="skills" sx={{ color: '#d2a85f', border: 1, p: 20 }}>
 
-            <Typography variant="h5" sx={{ color: '#d2a85f', textAlign: 'center', border: 1, p: 1 }}>
+            <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center', border: 1 }}>
                 Here are a few technologies I've been working with recently:
             </Typography>
 
