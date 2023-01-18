@@ -19,13 +19,13 @@ export default function Skills() {
     // ]
 
     return (
-        <Container id="skills" sx={{ color: '#d2a85f', border: 1, p: 20 }}>
+        <Container id="skills" sx={{ color: '#d2a85f', border: 1, p: '15%' }}>
 
             <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center', border: 1 }}>
                 Here are a few technologies I've been working with recently:
             </Typography>
 
-            <Grid container sx={{ backgroundColor: '#19153c', borderRadius: 2.5 }}>
+            <Grid container>
                 {/* {skills.map((skill) => (
                     // <Grid item xs={4}>
                     <Card sx={{ maxWidth: 100, border: 0, borderRadius: 2.5, backgroundColor: '#48476e' }}>

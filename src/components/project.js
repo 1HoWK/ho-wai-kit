@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 export default function Project() {
 
     return (
-        <Container id="project" sx={{ p: 20 }}>
+        <Container id="project" sx={{ p: '15%' }}>
             <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'left' }}>
                 My work
             </Typography>

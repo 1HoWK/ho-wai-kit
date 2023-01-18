@@ -13,6 +13,7 @@ function App() {
       <Project />
       <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
       <Contact />
+      <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
       <Footer />
     </div>
   );
