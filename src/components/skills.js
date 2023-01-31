@@ -14,9 +14,13 @@ import JavaIcon from '../assets/java-icon.png';
 
 export default function Skills() {
 
-    // const skills = [
-    //     { icon: JSIcon, name: 'JavaScript' }, { icon: ReactJSIcon, name: 'React JS' }, { icon: NextJSIcon, name: 'Next.JS' }, { icon: JavaIcon, name: 'Java' }, { icon: MongooseIcon, name: 'Mongoose DB' },
-    // ]
+    const skills = [
+        { icon: JSIcon, name: 'JavaScript' }, 
+        { icon: ReactJSIcon, name: 'React JS' }, 
+        { icon: NextJSIcon, name: 'Next.JS' }, 
+        { icon: JavaIcon, name: 'Java' }, 
+        { icon: MongooseIcon, name: 'Mongoose DB' },
+    ]
 
     return (
         <Container id="skills" sx={{ color: '#d2a85f', border: 1, p: '15%' }}>
@@ -26,12 +30,12 @@ export default function Skills() {
             </Typography>
 
             <Grid container>
-                {/* {skills.map((skill) => (
+                {skills.map((skill) => (
                     // <Grid item xs={4}>
-                    <Card sx={{ maxWidth: 100, border: 0, borderRadius: 2.5, backgroundColor: '#48476e' }}>
+                    <Card sx={{ width: 200, border: 0, borderRadius: 10, backgroundColor: '#48476e' }}>
                         <CardMedia
                             component="img"
-                            sx={{ width: 100 }}
+                            sx={{ width: '40%' }}
                             image={skill.icon}
                             alt={skill.name + "icon"}
                         />
@@ -42,23 +46,7 @@ export default function Skills() {
                         </CardContent>
                     </Card>
                     // </Grid>
-                ))} */}
-
-                {/* <Grid item xs={4}> */}
-                <Card sx={{ maxWidth: 100, border: 0, borderRadius: 2.5, backgroundColor: '#48476e' }}>
-                    <CardMedia
-                        component="img"
-                        sx={{ width: 100 }}
-                        image={ReactJSIcon}
-                        alt="react js icon"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h7" component="div" sx={{ color: '#bcc6d6' }}>
-                            React JS
-                        </Typography>
-                    </CardContent>
-                </Card>
-                {/* </Grid> */}
+                ))}
 
                 {/* {console.log(skills)} */}
 
