@@ -9,7 +9,7 @@ export default function About() {
     //   12022A,100027 150134, 
     return (
 
-        <Container id="about" sx={{ color: '#d2a85f', border: 1, p: '15%' }}>
+        <Container id="about" sx={{p: '15%' }}>
             <Grid
                 container
                 direction="column"

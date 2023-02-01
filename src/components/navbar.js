@@ -42,7 +42,7 @@ export default function NavigationBar() {
     }));
 
     return (
-        <AppBar color="transparent" position="static" sx={{ border: 1 }}>
+        <AppBar color="transparent" position="fixed" sx={{ border: 1 }}>
             <Container maxWidth="xl" sx={{ color: '#d2a85f' }}>
                 <Toolbar disableGutters>
                     {/* Normal */}
