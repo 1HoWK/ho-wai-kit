@@ -106,7 +106,7 @@ export default function NavigationBar() {
                                     {page}
                                 </Buttons>
                             ))}
-                            <ResumeButton
+                            <ResumeButton 
                                 sx={{ m: 2, color: '#100027', borderColor: '#100027', display: 'block', fontWeight: 'bold' }}
                             // href={Resume}
                             // target="_blank"
@@ -158,28 +158,6 @@ export default function NavigationBar() {
                             Resume
                         </ResumeButton>
                     </Box>
-
-                    {/* <h1 id="title">Survey Form</h1>
-                    <p id="description">This is a short survey form</p>
-                    <form id="survey-form">
-                        <label id="name-label">Name :</label>
-                        <input id="name" type="text" placeholder="Enter your name" />
-                        <label id="email-label">Email :</label>
-                        <input id="email" type="email" placeholder="Enter your email" />
-                        <label id="number-label">Number :</label>
-                        <input id="number" type="number" min="1" max="8" placeholder="Enter a number" />
-                        <label>Gender :</label>
-                        <select id="dropdown" >
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
-
-                        <textarea id="w3review" name="w3review" rows="4" cols="50">
-                        </textarea>
-
-                    </form> */}
-
                 </Toolbar>
             </Container>
         </AppBar>
