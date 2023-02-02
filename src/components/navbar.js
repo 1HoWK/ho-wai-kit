@@ -31,6 +31,7 @@ export default function NavigationBar() {
         '&:hover': {
             color: '#d2a85f',
             borderColor: '#d2a85f',
+            backgroundColor: 'transparent',
         },
     }));
 
@@ -38,11 +39,13 @@ export default function NavigationBar() {
         color: '#bcc6d6',
         '&:hover': {
             color: '#d2a85f',
+            backgroundColor: 'transparent',
         },
     }));
 
     return (
-        <AppBar color="transparent" position="fixed" sx={{ border: 1 }}>
+
+        <AppBar position="fixed" sx={{ backgroundColor: '#100027' }}>
             <Container maxWidth="xl" sx={{ color: '#d2a85f' }}>
                 <Toolbar disableGutters>
                     {/* Normal */}

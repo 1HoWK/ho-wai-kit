@@ -6,7 +6,6 @@ import ProfilePicture from '../assets/HoWaiKit.jpg';
 
 export default function About() {
 
-    //   12022A,100027 150134, 
     return (
 
         <Container id="about" sx={{p: '15%' }}>
@@ -32,7 +31,6 @@ export default function About() {
                 </Grid>
             </Grid>
         </Container>
-
 
     )
 };
