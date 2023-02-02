@@ -2,44 +2,39 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
-
-// import ReactJSIcon from '../assets/reactjs-icon.png';
-// import NextJSIcon from '../assets/nextjs-icon.png';
-// import JSIcon from '../assets/js-icon.png';
-// import MongooseIcon from '../assets/mongoose-icon.png';
-// import JavaIcon from '../assets/java-icon.png';
 
 export default function Skills() {
 
     const recentSkills = [
+
         { icon: 'https://img.icons8.com/color/48/null/javascript--v1.png', name: 'JavaScript' },
         { icon: 'https://img.icons8.com/color/48/null/react-native.png', name: 'React JS' },
         { icon: 'https://img.icons8.com/color/48/null/nextjs.png', name: 'Next.JS' },
+        { icon: 'https://img.icons8.com/color/48/null/html-5--v1.png', name: 'HTML' },
+        { icon: 'https://img.icons8.com/color/48/null/css3.png', name: 'CSS' },
+        { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
         { icon: 'https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png', name: 'Java' },
-        { icon: 'https://img.icons8.com/color/48/null/mongoose.png', name: 'Mongoose DB' },
+        { icon: 'https://img.icons8.com/offices/48/null/php-logo.png', name: 'PHP' },
+        { icon: 'https://img.icons8.com/fluency/48/null/laravel.png', name: 'Laravel' },
+        { icon: 'https://img.icons8.com/color/48/null/solidity.png', name: 'Solidity' },
+        { icon: 'https://img.icons8.com/color/48/null/kotlin.png', name: 'Kotlin' },
         { icon: 'https://img.icons8.com/glyph-neue/48/ffffff/github.png', name: 'GitHub' },
-        { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
-
-    ]
-
-    const skillsLearned = [
+        { icon: 'https://img.icons8.com/color/48/null/android-studio--v2.png', name: 'Android Studio' },
+        { icon: 'https://img.icons8.com/color/48/null/mysql-logo.png', name: 'MySQL' },
+        { icon: 'https://img.icons8.com/color/48/null/mongoose.png', name: 'Mongoose DB' },
         { icon: 'https://img.icons8.com/color/48/null/firebase.png', name: 'Firebase' },
-        { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
-        { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
 
     ]
 
     // custom card object
     const CustomCard = styled(Card)(({ theme }) => ({
         width: '12.5%',
-        margin: 20,
-        padding: 5,
+        margin: 4,
+        padding: 10,
         border: 0,
-        borderRadius: 5,
+        borderRadius: 3,
         backgroundColor: '#19153c',
         "&:hover": {
             backgroundColor: '#000000',
@@ -47,46 +42,19 @@ export default function Skills() {
         }
     }));
 
-
-
     return (
         <Container id="skills" sx={{ p: '15%' }}>
 
-            <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center', border: 1 }}>
+            <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center' }}>
                 Here are a few technologies I've been working with recently:
             </Typography>
 
-            <Grid container>
-                {/* {skills.map((skill) => (
-                    // <Grid item xs={4}>
-                    <Card sx={{
-                        borderRadius: 2.5,
-                        backgroundColor: '#160034',
-                        m: 5,
-                        "&:hover": {
-                            backgroundColor: '#000000',
-                            boxShadow: 3
-                        }
-                    }}>
-                        <CardMedia
-                            component="img"
-                            sx={{ border: 2, borderColor: 'red' }}
-                            src={skill.icon}
-                            alt={skill.name + "icon"}
-                        />
-                        <CardContent sx={{ border: 2, borderColor: 'green', }} >
-                            <Typography gutterBottom variant="h7" component="div" sx={{ color: '#bcc6d6' }}>
-                                {skill.name}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                    // </Grid>
-                ))} */}
+            <Grid container sx={{ backgroundColor: '#282552', mt: 3, borderRadius: 3, p: 2 }}>
                 {recentSkills.map((skill) => (
                     <CustomCard>
-                        <img src={skill.icon} />
+                        <img src={skill.icon} alt={skill.name + "icon"} />
                         {/* <CardContent> */}
-                        <Typography variant="subtitle1" component="div" sx={{ color: '#bcc6d6' }}>
+                        <Typography variant="subtitle2" component="div" sx={{ color: '#bcc6d6', }}>
                             {skill.name}
                         </Typography>
                         {/* </CardContent> */}
