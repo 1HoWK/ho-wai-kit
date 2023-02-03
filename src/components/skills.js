@@ -7,13 +7,13 @@ import Grid from '@mui/material/Grid';
 
 export default function Skills() {
 
-    const recentSkills = [
+    const technologies = [
 
-        { icon: 'https://img.icons8.com/color/48/null/javascript--v1.png', name: 'JavaScript' },
         { icon: 'https://img.icons8.com/color/48/null/react-native.png', name: 'React JS' },
         { icon: 'https://img.icons8.com/color/48/null/nextjs.png', name: 'Next.JS' },
         { icon: 'https://img.icons8.com/color/48/null/html-5--v1.png', name: 'HTML' },
         { icon: 'https://img.icons8.com/color/48/null/css3.png', name: 'CSS' },
+        { icon: 'https://img.icons8.com/color/48/null/javascript--v1.png', name: 'JavaScript' },
         { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
         { icon: 'https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png', name: 'Java' },
         { icon: 'https://img.icons8.com/offices/48/null/php-logo.png', name: 'PHP' },
@@ -31,7 +31,9 @@ export default function Skills() {
     // custom card object
     const CustomCard = styled(Card)(({ theme }) => ({
         width: '12.5%',
-        margin: 4,
+        marginTop: 23,
+        marginBottom: 23,
+        marginLeft: 23,
         padding: 10,
         border: 0,
         borderRadius: 3,
@@ -43,14 +45,14 @@ export default function Skills() {
     }));
 
     return (
-        <Container id="skills" sx={{ p: '15%' }}>
+        <Container id="skills" sx={{ p: '10%' }}>
 
             <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center' }}>
                 Here are a few technologies I've been working with recently:
             </Typography>
 
             <Grid container sx={{ backgroundColor: '#282552', mt: 3, borderRadius: 3, p: 2 }}>
-                {recentSkills.map((skill) => (
+                {technologies.map((skill) => (
                     <CustomCard>
                         <img src={skill.icon} alt={skill.name + "icon"} />
                         {/* <CardContent> */}
