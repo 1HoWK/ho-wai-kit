@@ -16,6 +16,7 @@ export default function Skills() {
         { icon: 'https://img.icons8.com/color/48/null/javascript--v1.png', name: 'JavaScript' },
         { icon: 'https://img.icons8.com/color/48/null/material-ui.png', name: 'Material UI' },
         { icon: 'https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png', name: 'Java' },
+        { icon: 'https://img.icons8.com/color/48/null/c-programming.png', name: 'C' },
         { icon: 'https://img.icons8.com/offices/48/null/php-logo.png', name: 'PHP' },
         { icon: 'https://img.icons8.com/fluency/48/null/laravel.png', name: 'Laravel' },
         { icon: 'https://img.icons8.com/color/48/null/solidity.png', name: 'Solidity' },
@@ -36,7 +37,7 @@ export default function Skills() {
         marginLeft: 23,
         padding: 10,
         border: 0,
-        borderRadius: 3,
+        borderRadius: 5,
         backgroundColor: '#19153c',
         "&:hover": {
             backgroundColor: '#000000',
@@ -51,12 +52,12 @@ export default function Skills() {
                 Here are a few technologies I've been working with recently:
             </Typography>
 
-            <Grid container sx={{ backgroundColor: '#282552', mt: 3, borderRadius: 3, p: 2 }}>
+            <Grid container sx={{ backgroundColor: '#282552', mt: 3, borderRadius: 5, p: 2 }}>
                 {technologies.map((skill) => (
                     <CustomCard>
                         <img src={skill.icon} alt={skill.name + "icon"} />
                         {/* <CardContent> */}
-                        <Typography variant="subtitle2" component="div" sx={{ color: '#bcc6d6', }}>
+                        <Typography variant="subtitle2" component="div" sx={{ color: '#bcc6d6', m:1 }}>
                             {skill.name}
                         </Typography>
                         {/* </CardContent> */}

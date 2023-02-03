@@ -60,6 +60,7 @@ export default function Contact() {
                 alignItems="center"
                 spacing={2}
                 p={2}
+                marginTop={3}
             >
                 {
                     socialMedias.map((socialMedia) => (
