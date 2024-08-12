@@ -102,6 +102,7 @@ export default function NavigationBar() {
                   key={page}
                   onClick={handleCloseNavMenu}
                   href={page !== "CV" ? `#${page}` : cvUrl}
+                  target={page !== "CV" ? "" : "_blank"}
                 >
                   {page}
                 </CustomButton>
@@ -142,6 +143,7 @@ export default function NavigationBar() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 href={page !== "CV" ? `#${page}` : cvUrl}
+                target={page !== "CV" ? "" : "_blank"}
               >
                 {page}
               </CustomButton>

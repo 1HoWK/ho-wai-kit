@@ -1,5 +1,5 @@
 import './App.css';
-import { About, NavBar, Footer, Project, Contact, Skills } from './components/index';
+import { About, NavBar, Project, Contact, Skills } from './components/index';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
       <Contact />
       <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
-      <Footer />
+     
     </div>
   );
 }
