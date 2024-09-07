@@ -46,7 +46,7 @@ export default function Skills() {
     }));
 
     return (
-        <Container id="skills" sx={{ p: '10%' }}>
+        <Container id="skills">
 
             <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center' }}>
                 Here are a few technologies I've been working with recently:

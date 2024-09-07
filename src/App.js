@@ -7,14 +7,9 @@ function App() {
     <div className="App">
       <NavBar />
       <About />
-      <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
       <Skills />
-      <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
       <Project />
-      <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
-      <Contact />
-      <hr style={{ width: '2rem', borderColor: '#d2a85f' }} />
-     
+      <Contact/>     
     </div>
   );
 }

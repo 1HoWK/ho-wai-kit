@@ -49,10 +49,9 @@ export default function Contact() {
     ]
 
     return (
-        <Container id="contact" sx={{ p: '15%' }}>
-
-            <Typography variant="h4" sx={{ color: '#d2a85f', textAlign: 'center' }}>
-                Let's Connect
+        <Container id="contact" sx={{ border: 1,  borderColor: 'error.main' }}>
+            <Typography variant="h4" sx={{ color: '#4b2e2e', textAlign: 'center',fontWeight: 'bold'  }}>
+                Contact me
             </Typography>
             <Stack
                 direction="row"

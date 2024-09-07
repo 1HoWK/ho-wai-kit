@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 
-const pages = ["about", "skills", "project", "contact", "CV"];
+const pages = ["about", "skills", "projects", "contact", "CV"];
 
 const cvUrl =
   "https://docs.google.com/document/d/14-bkMMkDxiRSm3aTfPnF1Ztn3YYC3VnNrsktleqIj4c/edit?usp=sharing";
@@ -39,7 +39,7 @@ export default function NavigationBar() {
   }));
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#faf0e6" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#faf9f6" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Web view starts here */}
